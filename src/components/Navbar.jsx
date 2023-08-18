@@ -1,12 +1,12 @@
-import React, {Fragment, useEffect, useState} from "react";
-import '../styles/navbar.css';
+import React, { Fragment, useEffect, useState } from "react";
+import "../styles/navbar.css";
 
 const Navbar = () => {
-    return (
-        <nav className="navbar">
-            <div clasName="navbar">I am a Navbar </div>
-        </nav>
-    )
-}
+  return (
+    <nav className="navbar">
+      <div className="navbar">I am a not Navbar </div>
+    </nav>
+  );
+};
 
 export default Navbar;
