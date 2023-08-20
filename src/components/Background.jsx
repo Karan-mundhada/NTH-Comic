@@ -19,6 +19,7 @@ const BackGround = () => {
         const comicHeight = canvas.height/numY
         const numTextures = 10
         const comicSpeed = 1
+        const opacity = 0
 
         let textures = []
         let assTexture = []
@@ -37,7 +38,7 @@ const BackGround = () => {
             offsets.push(0)
             speed.push(0.2+comicSpeed*Math.random())
         }
-        let offset = 0;
+        // let offset = 0;
         
         function draw(){
             // c.fillStyle = 'white'

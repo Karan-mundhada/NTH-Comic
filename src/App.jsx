@@ -3,6 +3,7 @@ import "./App.css";
 import BackGround from "./components/background";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Pane from "./components/Pane";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" component={Login} /> */}
       </BrowserRouter>
       <BackGround />
+      <Pane/>
       <Footer />
     </>
   );
