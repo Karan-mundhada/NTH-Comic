@@ -27,7 +27,7 @@ const BackGround = () => {
             const texture = new Image()
             texture.src = `./public/static/textures/texture${i}.jpg`
             texture.onload = ()=>{
-                console.log(texture)
+                //console.log(texture)
                 textures.push(texture);
             }
         }
