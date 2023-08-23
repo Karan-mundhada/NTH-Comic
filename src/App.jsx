@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import create from "zustand";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import BackGround from "./components/background";
 import Navbar from "./components/Navbar";
@@ -13,15 +14,19 @@ function App() {
   const activePage = useStore((state) => state.activePage);
 
   return (
-    <Router>
+    <>
+      <BrowserRouter>
       <Navbar activePage={activePage} />
-      <Route path="/" exact component={Home} />
-      <Route path="/about" component={About} />
-      {/* Add other Route components for Leaderboard, Contact, and Login */}
+        <Routes>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          {/* Add other Route components for Leaderboard, Contact, and Login */}
+        </Routes>
       <BackGround />
       <Pane />
       <Footer />
-    </Router>
+      </BrowserRouter>
+    </>
   );
 }
 
