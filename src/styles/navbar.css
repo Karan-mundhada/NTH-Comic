@@ -1,25 +1,55 @@
 .navbar {
-  background-color: yellow;
-  padding: 30px;
+  /* Set the background image */
+  background-image: url('../public/static/Header.png');
+  background-size: cover; /* Adjust as needed */
+  background-color: yellow; /* Fallback background color */
+
+  padding: 15px 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
-  box-shadow: 3px 3px 8px black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: "Comic Sans MS";
   display: flex;
-  justify-content: space-around;
-  background: radial-gradient(circle, black 1px, transparent 1px), yellow;
-  background-size: 5px 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  max-height: 50px;
 }
 
 .navbar a {
   color: black;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
+  margin: 0 15px;
+  transition: color 0.2s ease;
 }
 
 .navbar a:hover {
   color: red;
+}
+
+.login-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #333;
+}
+
+/* Add these styles to extend the logo below the navbar */
+.logo-container {/* Space between logo and links */
+  height: 5rem;
+  width: 5rem;
 }
