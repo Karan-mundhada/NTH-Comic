@@ -1,0 +1,30 @@
+.pane {
+  display: flex;
+  /* flex-direction: column; */
+  position: absolute;
+  /* background-color: purple;
+  opacity: 0.5; */
+  border: 2px;
+  border-radius: 20px;
+  border-color: white;
+  border-style: solid;
+
+  top: 0px;
+  /* margin: 30vh 100px 10vh 100px; */
+  margin: 150px 5vW 50px 5vW;
+  width: 90vW;
+  height: 800px;
+  justify-content: center;
+  margin-bottom: 1000px;
+
+  font-family: "Comic Sans MS";
+  color: white;
+}
+
+.nth-logo{
+  height: 30vw;
+}
+.nth-text{
+  padding: 25px 3vw;
+  text-align: center;
+}
