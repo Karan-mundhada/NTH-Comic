@@ -16,6 +16,10 @@
   align-items: center;
 }
 
+.navbar a:first-child {
+  margin-left: 0; /* Set left margin to 0 for the first link (Home) */
+}
+
 .navbar img {
   max-height: 50px;
 }
@@ -49,7 +53,9 @@
 }
 
 /* Add these styles to extend the logo below the navbar */
-.logo-container {/* Space between logo and links */
-  height: 5rem;
-  width: 5rem;
+.logo-container {
+  z-index: 3;
+  display: fixed;
+  position : absolute;
+  top: 0%;
 }

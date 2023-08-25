@@ -7,6 +7,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Pane from "./components/Pane";
 import About from "./components/About"; // Import your About component
+/* src/index.css */
+/* ...any other global styles or imports... */
+import './styles/tailwind.css';
+
 
 const App = () => {
   return (
